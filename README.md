@@ -37,9 +37,10 @@ When you test your site in this stadium. You vil get an error message.
 hugo serve
 ```
 `Error: module "hugo-xmin" not found; ...`
+
 That's because no theme is added to the site.
 
-Upload your unfinished site on **GitHub**. This step is very important( I suppose it will work with another git provider like GitLab or GitBucket). Later on we have to locate **GitHub** repo with the [**hugo mod init** command](https://gohugo.io/commands/hugo_mod_init/).
+Now its time to upload your unfinished site to **GitHub**. This is very important( I suppose it will work with another git provider like GitLab or GitBucket). Later on we have to locate **GitHub** repo with the [**hugo mod init** command](https://gohugo.io/commands/hugo_mod_init/).
 
 [Create a **GitHub** Repo](https://github.com/new) and name it **hugo-test-modules**
 
@@ -71,14 +72,18 @@ For now it has only been bureaucracy. The fun part is starting now:
    hugo mod init github.com/< your username >/hugo-test-modules
    ```
    The command could output something like this:
+   
    `go: creating new go.mod: module github.com/< your username >/hugo-test-modules`
+   
    *information: a new file* **go.mod** *was created*
 
 1. Test your site:
    ```
    hugo serve
    ```
+   
    Your site should look exactly the same as [this site](https://xmin.yihui.name/)
+   
    *information: a new file* **go.sum** *was created*
 
 1. Commit your changes and push it to **GitHub**
