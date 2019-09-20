@@ -1,24 +1,10 @@
 [TOC]
-
+ssh test
 For the first time I have been able to use the **Hugo modules** feature. Thanks to @chreliot and his [post](https://discourse.gohugo.io/t/how-to-add-a-theme-using-modules-for-beginners/20665), I finally figured out how to use it. I'm not smart enough to figure it out out through the documentation that are available so far.
 
-For other **Hugo modules** noobs that are fighting with **Hugo modules**. This is a step by step guide to help you to get up and running with Hugo modules. Follow the steps and get up and running with Hugo modules.
-
-* Part 1. Prepare a Hugo site to test out Hugo modules
-* Part 2. Add a theme as a Hugo module
-* Part 3. Add content to your site with a Hugo module
+For other **Hugo modules** noobs that are fighting with **Hugo modules**. This is a step by step guide to help you to get up and running with Hugo modules. 
 
 ## Part 1. Prepare a Hugo site to test out Hugo modules
-For the first time I have been able to use the **Hugo modules** feature. Thanks to @chreliot and his [post](https://discourse.gohugo.io/t/how-to-add-a-theme-using-modules-for-beginners/20665), I finally figured out how to use it. I'm not smart enough to figure it out out through the documentation that are available so far.
-
-For other **Hugo modules** noobs that are fighting with **Hugo modules**. I have made an extremely detailed description how to install a theme with **Hugo modules**. I am not going in detail on anything. Just get a site up and running. [Here is the Link to the final Hugo site](https://github.com/craftsmandigital/hugo-test-modules). Just follow the steps carefully to create that Hugo site.
-
-Here is what you have to do:
-
-* Install latest version of **go** on your computer
-* Prepare a test site to implement a theme as a **Hugo module**
-* Finally you dive into the tasks and code to implement the **Hugo module**
-
 ### Install latest version of go on your computer
 
 Make sure that you have installed a recent version of go on your computer. [Here is the link to the **go** install](https://golang.org/dl/). Follow the instructions carefully. [The **Hugo mod** commands](https://gohugo.io/commands/hugo_mod/) do not work without doing this. If you use the **Hugo mod** commands, without installing **go**, nothing happens. You don't get an error message as feedback.
@@ -60,7 +46,7 @@ That's because no theme is added to the Hugo site.
 
    
 
-1. Add this to your **[config.toml](https://github.com/craftsmandigital/dummy/blob/master/config.toml)** to specify a theme as Hugo module:
+1. Add this to your **[config.toml](https://github.com/craftsmandigital/craftsmandigital/blob/master/config.toml)** to specify a theme as Hugo module:
    ```toml
    [module]
      [[module.imports]]
@@ -133,7 +119,7 @@ Here is the configuration that you could drop in your **[config.toml](https://gi
 * **source** describe witch folder(from root) in mounted repo you could append to your Hugo site ([this link brings you inside the actual folder](https://github.com/craftsmandigital/markdown-content-repo/tree/master/testing-hugo-modules))
 * **target** describe witch folder(from root) in your Hugo site the mount could appear (**content/new-stuff**)
 
-After updating **[config.toml](https://github.com/craftsmandigital/dummy/blob/master/config.toml)** there is nothing more to do. It's time to test your site.
+After updating **[config.toml](https://github.com/craftsmandigital/craftsmandigital/blob/master/config.toml)** there is nothing more to do. It's time to test your site.
 ```bash
 hugo serve
 ```
